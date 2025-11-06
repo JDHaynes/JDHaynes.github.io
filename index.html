@@ -97,8 +97,12 @@
             transform: scale(1.05);
         }
 
-        .image-box {
-            display:flex;
+        .logo-container {
+            display: flex;
+        }
+
+        .logo-container > div {
+            width:20%;
         }
 
         footer {
@@ -116,16 +120,10 @@
 <body>
 
     <header>
-        <div class="image-container">
-            <div class="image-box">
-                <img src="UniLogo.jpg" alt="UoMLogo">
-            </div>
-            <div class="image-box">
-                <img src="STARDUST logo.jpg" alt="STARUSTLogo">
-            </div>
-            <div class="image-box">
-                <img src="VR2 logo.png" alt="VR2Logo">
-            </div>
+        <div class="logo-container">
+            <img src="UniLogo.jpg" alt="UoMLogo" style=300px>
+            <img src="STARDUST logo.jpg" alt="STARUSTLogo">
+            <img src="VR2 logo.png" alt="VR2Logo">
         </div>
         <h1>STudy to Assess and Reduce Dizziness (in PPPD) Using Sensory Theory</h1>
     </header>
