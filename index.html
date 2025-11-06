@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Tab logo.jpg">
     <title>STARDUST</title>
     <style>
         body {
@@ -11,17 +12,15 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            text-size-adjust: auto;
         }
 
         header {
-            background-color: #2c3e50;
-            color: #fff;
+            background-color: #000000;
+            color: #5bdeff;
             text-align: center;
-            padding: 1.5em 0;
-        }
-
-        header h1 {
-            margin: 0;
+            padding: 1.5% 0;
+            text-size-adjust: auto;
         }
 
         nav {
@@ -98,20 +97,23 @@
         }
 
         .logo-container {
-            width:100%;
-            overflow:auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding:0 0 1.5% 0;
         }
 
-        .logo-container div {
-            width:33%;
-            float:left;
+        .logo-row {
+            flex:28%;
+            max-width:28%;
+            padding: 0 2.5%;
+            align-content: center;
         }
 
         footer {
             background-color: #2c3e50;
             color: #fff;
             text-align: center;
-            padding: 1em 0;
+            padding: 1.5% 0 0 0;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -123,14 +125,14 @@
 
     <header>
         <div class="logo-container">
-            <div>
-                <img src="UniLogo.jpg" alt="UoMLogo">
+            <div class="logo-row">
+                <img src="UniLogo.jpg" alt="UoMLogo" style="width:100%">
             </div>
-            <div>
-                <img src="STARDUST logo.jpg" alt="STARUSTLogo" style="width:300px;height:200px;">
+            <div class="logo-row">
+                <img src="STARDUST logo.jpg" alt="STARUSTLogo" style="width:100%">
             </div>
-            <div>
-                <img src="VR2 logo.png" alt="VR2Logo">
+            <div class="logo-row">
+                <img src="VR2 logo.png" alt="VR2Logo" style="width:100%">
             </div>
         </div>
         <h1>STudy to Assess and Reduce Dizziness (in PPPD) Using Sensory Theory</h1>
@@ -167,7 +169,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Beautiful Website. All rights reserved.</p>
+        <p>&copy; 2025 Joshua Haynes. All rights reserved.</p>
     </footer>
 
 </body>
